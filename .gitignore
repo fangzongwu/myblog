@@ -101,4 +101,8 @@ ENV/
 .mypy_cache/
 
 #database
-.sqlite3
+db.sqlite3
+
+.DS_Store
+
+fabfile.py
