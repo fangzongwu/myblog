@@ -5,6 +5,10 @@ from django.db import models
 class Category(models.Model):
 	name = models.CharField(max_length=40)
 	single_price = models.FloatField()
+	image = models.CharField(max_length=200, null=True, blank=True)
+	desc = models.CharField(max_length=100, null=True, blank=True)
+	is_commend = models.BooleanField()
+
 
 	def __str__(self):
 		return self.name

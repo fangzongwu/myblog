@@ -5,7 +5,7 @@ from .models import Category, TotalPrice
 class CategorySerializer(serializers.HyperlinkedModelSerializer):
 	class Meta:
 		model = Category
-		fields = ('id', 'name', 'single_price')
+		fields = ('id', 'name', 'single_price', 'image', 'desc', 'is_commend')
 
 # 订单价格
 class TotalPriceSerializer(serializers.HyperlinkedModelSerializer):
