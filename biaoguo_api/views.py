@@ -14,3 +14,9 @@ class TotalPriceViewSet(viewsets.ModelViewSet):
 	# ModelViewSet模型默认拥有get、post请求
 	queryset = TotalPrice.objects.all()
 	serializer_class = TotalPriceSerializer
+
+# 推荐美食
+class CommendListViewSet(viewsets.ModelViewSet):
+	queryset = Category.objects.get_queryset().filter(is_commend=True)
+	serializer_class = CategorySerializer
+
