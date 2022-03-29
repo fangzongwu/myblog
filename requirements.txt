@@ -12,7 +12,7 @@ Fabric3==1.14.post1
 httpie==0.9.9
 idna==2.6
 Markdown==2.6.9
-paramiko==2.4.1
+paramiko==2.10.1
 pyasn1==0.4.2
 pycparser==2.18
 Pygments==2.2.0
